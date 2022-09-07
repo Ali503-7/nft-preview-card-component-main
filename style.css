@@ -28,17 +28,44 @@ body {
   align-items: center;
 }
 
+/* start img */
 
+.img {
+  background-color: #00fff8;
+  border-radius: 16.6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img svg {
+  position: absolute;
+  z-index: -1;
+}
 
 .img img {
   width: 260px;
-  padding: 10px var(--main-padding);
-  border-radius: 10%;
+  height: 260px;
+  border-radius: 15%;
+  padding: 0;
 }
+
+img:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+
+/* end img */
+
+/* start mid */
 
 .mid {
   padding: 0 var(--main-padding);
   display: inline-block;
+}
+
+.mid h2:hover{
+  color: #00fff8;
+  cursor: pointer;
 }
 
 .mid::after {
@@ -72,6 +99,9 @@ body {
   color: #00fff8;
 }
 
+/* end mid */
+
+/* Start bot */
 
 .bot {
   display: flex;
@@ -92,3 +122,10 @@ body {
 .bot span {
   color: #fff;
 }
+
+.bot span:hover {
+  color: #00fff8;
+  cursor: pointer;
+}
+
+/* End bot */
