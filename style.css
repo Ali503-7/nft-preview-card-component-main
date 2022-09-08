@@ -2,7 +2,7 @@
   --main-bg: hsl(217, 54%, 11%);
   --main-font: hsl(215, 32%, 27%);
   --main-padding: 30px;
-  --active-color: #00fff8;
+  --active-color: hsl(178, 100%, 50%);
 }
 
 body {
