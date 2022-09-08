@@ -65,7 +65,7 @@ body {
   display: inline-block;
 }
 
-.mid h1:hover{
+.mid h2:hover{
   color: var(--active-color);
   cursor: pointer;
 }
@@ -79,7 +79,7 @@ body {
   left: 32px;
 }
 
-.mid h1 {
+.mid h2 {
   color: #fff;
   width: fit-content;
 }
