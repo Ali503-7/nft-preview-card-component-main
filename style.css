@@ -2,6 +2,7 @@
   --main-bg: hsl(217, 54%, 11%);
   --main-font: hsl(215, 32%, 27%);
   --main-padding: 30px;
+  --active-color: #00fff8;
 }
 
 body {
@@ -31,15 +32,21 @@ body {
 /* start img */
 
 .img {
-  background-color: #00fff8;
   border-radius: 16.6%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
 }
-.img svg {
+
+.img:hover::after {
+  content: url(images/icon-view.svg);
   position: absolute;
-  z-index: -1;
+  display: inline;
+  top: 49%;
+  left: 50%;
+  transform: translate(-50% ,-50%);
+  background-color :#00fff743;
+  padding: 104px 106px;
+  border-radius: 14.6%;
+  cursor: pointer;
 }
 
 .img img {
@@ -47,11 +54,6 @@ body {
   height: 260px;
   border-radius: 15%;
   padding: 0;
-}
-
-img:hover {
-  opacity: 70%;
-  cursor: pointer;
 }
 
 /* end img */
@@ -64,7 +66,7 @@ img:hover {
 }
 
 .mid h2:hover{
-  color: #00fff8;
+  color: var(--active-color);
   cursor: pointer;
 }
 
@@ -79,6 +81,7 @@ img:hover {
 
 .mid h2 {
   color: #fff;
+  width: fit-content;
 }
 
 .mid .icon {
@@ -124,7 +127,7 @@ img:hover {
 }
 
 .bot span:hover {
-  color: #00fff8;
+  color: var(--active-color);
   cursor: pointer;
 }
 
